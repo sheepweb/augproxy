@@ -1,35 +1,20 @@
 {
-  "name": "supabase-proxy-server",
-  "version": "2.0.0",
+  "name": "augproxy",
+  "version": "1.0.0",
   "description": "一个简单、安全的 HTTPS API 反向代理服务器",
   "type": "module",
-  "main": "dist/supabase.server.js",
-  "scripts": {
-    "dev": "tsx watch supabase.server.ts",
-    "build": "tsc",
-    "start": "node dist/supabase.server.js",
-    "start:prod": "NODE_ENV=production node dist/supabase.server.js"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  },
   "keywords": [
     "proxy",
     "api-proxy",
     "reverse-proxy",
-    "http-proxy",
-    "typescript"
+    "vercel",
+    "serverless"
   ],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "https-proxy-agent": "^7.0.6"
-  },
   "devDependencies": {
-    "@types/node": "^22.10.5",
-    "@vercel/node": "^3.2.29",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.2",
-    "vercel": "^37.21.1"
+    "@types/node": "^20.0.0",
+    "@vercel/node": "^3.0.0",
+    "typescript": "^5.0.0"
   }
 }
